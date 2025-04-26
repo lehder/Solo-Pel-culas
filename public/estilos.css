@@ -111,6 +111,43 @@ body {
 .paginacion button:hover {
 	background: #137c32;
 }
+@media screen and (max-width: 1024px){
+	.section_button {
+		display: none;
+	}
+	.section_logo {
+		margin-right: 523px;
+	}
+}
+@media screen and (max-width: 960px){
+	.section_button {
+		display: none;
+	}
+	.section_logo {
+		margin-right: 450px;
+	}
+}
+@media screen and (max-width: 768px){
+	
+	.section_header { 
+		width: 768;
+	}
+	.section_logo {
+		margin-right: 267px;
+	}
+	.section_button {
+		display: none;
+		margin-left: 40px;
+		width: 50px;
+	}
+	.button {
+		width: 110px;
+	}
+	.paginacion {
+		width: 768px;
+	}
+
+}
 @media (max-width: 480px) {
 	body {
 		width: 479px;
