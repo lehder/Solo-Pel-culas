@@ -79,6 +79,23 @@ body {
 	margin-bottom: 10px;
 	border-radius: 15px;
 }
+@keyframes show {
+	from {
+		opacity: 0; scale: 10%
+	}
+	to {
+		opacity: 1; scale: 100%;
+	}
+  }
+  .contenedor .pelicula .poster {
+	view-timeline-name: --reveal;
+  
+	animation-name: show;
+	animation-fill-mode: both;
+  
+	animation-timeline: --reveal;
+	animation-range: entry 25% cover 50%;
+  }
 
 .paginacion {
 	position: fixed;
@@ -116,7 +133,9 @@ body {
 		display: none;
 	}
 	.section_logo {
-		margin-right: 523px;
+		/* margin-right: 523px; */
+		margin: 0;
+		width: 963px;
 	}
 }
 @media screen and (max-width: 960px){
@@ -124,16 +143,19 @@ body {
 		display: none;
 	}
 	.section_logo {
-		margin-right: 450px;
+		/* margin-right: 450px; */
+		margin: 0;
+		width: 772px;
 	}
 }
 @media screen and (max-width: 768px){
-	
 	.section_header { 
 		width: 768;
 	}
 	.section_logo {
-		margin-right: 267px;
+		/* margin-right: 267px; */
+		margin: 0;
+		width: 569px;
 	}
 	.section_button {
 		display: none;
@@ -147,6 +169,11 @@ body {
 		width: 768px;
 	}
 
+}
+@media (max-width: 570px) {
+	body {
+
+	}
 }
 @media (max-width: 480px) {
 	body {
@@ -163,7 +190,6 @@ body {
 		margin: 0;
 	} 
 	.section_button {
-		border: 1px solid red;
 		display: contents;
 	}
 	.button {
